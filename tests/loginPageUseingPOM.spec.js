@@ -1,6 +1,6 @@
 const {test, expect} = require('@playwright/test');
-const loginPagePOM = require('../pages/loginPage');
-const homePagePOM = require("../pages/homePage");
+const loginPagePOM = require('pages/loginpage.js');
+const homePagePOM = require("pages/homePage");
 
 test("Playwright Data Driven Testing", async({page}) => {
     await page.goto("https://freelance-learn-automation.vercel.app/login");
