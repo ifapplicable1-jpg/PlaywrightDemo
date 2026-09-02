@@ -28,3 +28,10 @@ A minimal Playwright framework scaffold using JavaScript.
 - `api/` — API clients
 - `tests/` — Playwright tests
 >>>>>>> 644f3da (First Playwright commit to Git)
+
+
+## Playwright docs: https://playwright.dev/docs/intro
+## Github Path: https://github.com/allure-framework/allure-js/tree/main/packages/allure-playwright
+## App for Practice: https://freelance-learn-automation.vercel.app/login
+##      Credentials: admin@email.com,admin@123
+## Another App: https://the-internet.herokuapp.com/

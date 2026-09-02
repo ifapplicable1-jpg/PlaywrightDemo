@@ -8,6 +8,7 @@ module.exports = defineConfig({
   expect: {
     timeout: 5_000,
   },
+  
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
@@ -15,11 +16,9 @@ module.exports = defineConfig({
   reporter: [
     ['list'],
     ['html', { outputFolder: 'reports/html-report', open: 'never' }],
-    ['allure-playwright', { outputFolder: 'reports/allure-results' }],
-    
-
-
+    ['allure-playwright', { outputFolder: 'reports/allure-results' }], 
   ],
+
   use: {
     baseURL: process.env.BASE_URL ?? 'https://playwright.dev',
     headless: true,
@@ -29,11 +28,13 @@ module.exports = defineConfig({
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
   },
+
   projects: [
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
   ],
+
   outputDir: 'test-results',
 });
